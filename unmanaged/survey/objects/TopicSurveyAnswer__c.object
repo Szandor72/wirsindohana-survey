@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>WirSindOhana uses this object to collect answers to our first round of quesitonnaire</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Captcha__c</fullName>
+        <description>only accepted answer: Bear</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What is Codey?</inlineHelpText>
+        <label>CAPTCHA: Codey is a...? (required)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Buffoon</fullName>
+                    <default>false</default>
+                    <label>Buffoon</label>
+                </value>
+                <value>
+                    <fullName>Badge</fullName>
+                    <default>false</default>
+                    <label>Badge</label>
+                </value>
+                <value>
+                    <fullName>Bear</fullName>
+                    <default>false</default>
+                    <label>Bear</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>OrgSizeInLicences__c</fullName>
+        <description>Indicates the biggest org submitter worked with</description>
+        <externalId>false</externalId>
+        <inlineHelpText>How many users did your largest Salesforce org have?</inlineHelpText>
+        <label>Biggest Org You Worked With</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>&lt;=100</fullName>
+                    <default>false</default>
+                    <label>&lt;=100</label>
+                </value>
+                <value>
+                    <fullName>100+</fullName>
+                    <default>false</default>
+                    <label>100+</label>
+                </value>
+                <value>
+                    <fullName>200+</fullName>
+                    <default>false</default>
+                    <label>200+</label>
+                </value>
+                <value>
+                    <fullName>500+</fullName>
+                    <default>false</default>
+                    <label>500+</label>
+                </value>
+                <value>
+                    <fullName>1000+</fullName>
+                    <default>false</default>
+                    <label>1000+</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TopicDescription__c</fullName>
+        <description>Description of Topic. Will be limited to 600 characters.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Required. Please take a few moments to consider and tell us what you like to learn next and how. 
+Be succinct in describing your next learning goal and what you would need to achieve it</inlineHelpText>
+        <label>What would you like to learn more about?</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>12</visibleLines>
+    </fields>
+    <fields>
+        <fullName>YearsOfExperience__c</fullName>
+        <description>Submitter&apos;s years of experience</description>
+        <externalId>false</externalId>
+        <inlineHelpText>How many years of experience do you have on the platform?</inlineHelpText>
+        <label>Years Of Experience</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3+</fullName>
+                    <default>false</default>
+                    <label>3+</label>
+                </value>
+                <value>
+                    <fullName>5+</fullName>
+                    <default>false</default>
+                    <label>5+</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>isArchitect__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Submitter does the work of an architect</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Are you involved in creating architecture on org or app level?</inlineHelpText>
+        <label>Architecture</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isBusinessAnalyst__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is submitter in the role of a BA</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Are you a business analyst as well?</inlineHelpText>
+        <label>Business Analysis</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isClicker__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates submitter works with clicks / is an admin / a flownatic</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Do you work with works clicks / are you an an admin / a flownatic?</inlineHelpText>
+        <label>Clicks</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isCoder__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Submitter does code</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Do you use code in your work?</inlineHelpText>
+        <label>Code</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isSolutionDesigner__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Submitter is involved in creating / designing apps</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Are you involved in in creating / designing apps according to users&apos; needs?</inlineHelpText>
+        <label>Solution Design</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isTeamWorker__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates submitter works in a team.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Do you work alone or as a part of a team? Check for Team member.</inlineHelpText>
+        <label>Work In A Team</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isUXDesigner__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Submitter is UX Designer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Do you create UX designs (CSS, Mockups Wireframes, Powerpoint/Slides)?</inlineHelpText>
+        <label>UX Design</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Topic-Survey Answer</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>TS-{00000}</displayFormat>
+        <label>Topic Suggestion</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Topic-Survey Answer</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

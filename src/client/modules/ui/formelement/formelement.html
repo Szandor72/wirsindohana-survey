@@ -1,0 +1,89 @@
+<template>
+    <div class={formElementClass}>
+        <template if:false={isCheckbox}>
+            <label
+                class="slds-form-element__label"
+                for="tooltip-showing-form-element-help-01"
+                >{label}</label
+            >
+        </template>
+        <template if:true={helptext}>
+            <div class="slds-form-element__icon">
+                <button
+                    class="slds-button slds-button_icon"
+                    aria-describedby="help"
+                >
+                    <span class="slds-button__icon" aria-hidden="true">
+                        ?
+                    </span>
+                    <span class="slds-assistive-text">Help</span>
+                </button>
+
+                <div
+                    class="slds-popover slds-popover_tooltip slds-nubbin_bottom-left"
+                    role="tooltip"
+                    id="help"
+                    style="position:absolute;top:-45px;left:-15px;width:170px"
+                >
+                    <div class="slds-popover__body">{helptext}</div>
+                </div>
+            </div>
+        </template>
+        <div class="slds-form-element__control">
+            <template if:true={isTextarea}>
+                <textarea
+                    id="textarea"
+                    name="textarea"
+                    rows="6"
+                    maxlength="1200"
+                    placeholder={placeholdertext}
+                    class="slds-textarea"
+                    onchange={handleChange}
+                    onkeyup={count}
+                ></textarea>
+                <div style="float:right;" class="slds-p-around_x-small">
+                    {charactercount}/{maxCharacters}
+                </div>
+            </template>
+            <template if:true={isInput}>
+                <input
+                    type={type}
+                    id="input"
+                    placeholder={placeholdertext}
+                    class="slds-input"
+                    onchange={handleChange}
+                />
+            </template>
+            <template if:true={isCheckbox}>
+                <div class="slds-checkbox" style="min-width:50vw;">
+                    <input
+                        type="checkbox"
+                        name="checkbox"
+                        id="checkbox"
+                        value="false"
+                        onchange={handleCheckbox}
+                    />
+                    <label class="slds-checkbox__label" for="checkbox">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{label}</span>
+                    </label>
+                </div>
+            </template>
+            <template if:true={isPicklist}>
+                <div class="slds-select_container">
+                    <select
+                        name="picklist"
+                        onchange={handleChange}
+                        class="slds-select"
+                        id="select"
+                    >
+                        <option>- No Selection -</option>
+                        <template for:each={options} for:item="option">
+                            <option key={option}>{option}</option>
+                        </template>
+                    </select>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,81 @@
+<template>
+    <div class="center greeting">
+        <fancy-greeting speed="slow"></fancy-greeting>
+        <!-- <fancy-greeting speed="medium"></fancy-greeting> -->
+        <!-- <fancy-greeting speed="fast"></fancy-greeting> -->
+    </div>
+
+    <div class="center">
+        <img src="/resources/wirsindohana.png" />
+    </div>
+
+    <!-- Page code -->
+    <div class="center">
+        <div>
+            <template if:false={thankyouVisible}>
+                <p class="tagline slds-m-top_large">
+                    <template if:false={isSaving}>
+                        This way to learning. Take our&nbsp;
+                        <a
+                            onclick={openSurvey}
+                            class="survey-link"
+                            target="_blank"
+                            >Survey</a
+                        >
+                    </template>
+                    <template if:true={isSaving}>
+                        Saving...
+                    </template>
+                </p>
+            </template>
+            <template if:true={thankyouVisible}>
+                <p class="tagline slds-m-top_large slds-m-left_large">
+                    Each submission is valued.&nbsp;
+                    <span class="survey-link">Thank you</span>
+                </p>
+            </template>
+        </div>
+    </div>
+
+    <!-- <div
+        class="slds-p-around_large"
+        style="display: flex; flex-wrap: wrap; justify-content: center"
+    >
+        <template for:each={accounts} for:item="account">
+            <template if:true={account.Description}>
+                <ui-card
+                    class="slds-p-around_small"
+                    key={account.Id}
+                    title={account.Name}
+                >
+                    {account.Description}
+                    <span slot="footer">This account is {account.Rating}</span>
+                </ui-card>
+            </template>
+        </template>
+    </div> -->
+    <template if:true={isSurveyFormModalVisible}>
+        <ui-modal
+            oncancelmodal={hideSurvey}
+            title="This way to learning. But where to next?"
+        >
+            <!-- <p slot="tagline" class="slds-m-top_x-small">
+                Please take a few moments to consider and tell us what you would
+                like to learn next and how.
+            </p> -->
+            <ui-form
+                fields={surveyFields}
+                onformdatachange={handleformdata}
+            ></ui-form>
+            <button
+                slot="saveButton"
+                name="saveButton"
+                class="slds-button slds-button_brand"
+                onclick={onSurveyFormSaveClick}
+                disabled={isFormDataIncomplete}
+            >
+                Save
+            </button>
+        </ui-modal>
+    </template>
+</template>

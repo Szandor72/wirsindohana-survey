@@ -1,0 +1,29 @@
+.center {
+    text-align: center;
+    margin-left: 0.5vw;
+}
+.survey-link {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #f2643e;
+    color: white;
+    /* display: inline-block; */
+    margin-top: 1em;
+}
+
+.tagline {
+    font-size: 2.5vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    max-width: 50vw;
+    padding-bottom: 6px;
+}
+
+.greeting {
+    height: 60px;
+    padding-bottom: 24px;
+}

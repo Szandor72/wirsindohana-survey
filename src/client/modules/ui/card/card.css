@@ -1,0 +1,13 @@
+.ui-card {
+    width: 23vw;
+    min-width: 100px;
+    background: #7ea4d6;
+}
+
+a {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}

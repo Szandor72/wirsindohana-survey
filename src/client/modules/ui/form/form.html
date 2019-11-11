@@ -1,0 +1,48 @@
+<template>
+    <div class="slds-form">
+        <ui-formelement
+            stacked="true"
+            type={topic.dataType}
+            label={topic.label}
+            name={topic.apiName}
+            placeholdertext={topic.inlineHelpText}
+            onvaluechange={handleChange}
+        ></ui-formelement>
+
+        <fieldset class="slds-form-element">
+            <div style="display: flex;" class="slds-m-top_medium">
+                <legend
+                    class="slds-form-element__legend slds-form-element__label"
+                >
+                    Check all boxes that fit. <br />
+                    You do ...
+                </legend>
+            </div>
+
+            <div style="display: flex; flex-wrap:wrap;">
+                <template for:each={checkboxes} for:item="checkbox">
+                    <ui-formelement
+                        key={checkbox.apiName}
+                        name={checkbox.apiName}
+                        style="width: calc(50% - 10px);"
+                        type="Checkbox"
+                        label={checkbox.label}
+                        onvaluechange={handleChange}
+                    ></ui-formelement>
+                </template>
+            </div>
+        </fieldset>
+        <template for:each={picklists} for:item="picklist">
+            <div class="slds-m-top_medium" key={picklist.apiName}>
+                <ui-formelement
+                    type="Picklist"
+                    key={picklist.apiName}
+                    name={picklist.apiName}
+                    stacked="true"
+                    label={picklist.label}
+                    onvaluechange={handleChange}
+                ></ui-formelement>
+            </div>
+        </template>
+    </div>
+</template>
