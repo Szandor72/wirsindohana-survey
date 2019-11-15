@@ -1,6 +1,7 @@
 import { LightningElement, track, api } from 'lwc';
 
 const greetings = [
+    'Servus',
     'Hello',
     'Bonjour',
     '你好',

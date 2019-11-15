@@ -1,16 +1,12 @@
 import { LightningElement, track } from 'lwc';
 
 export default class App extends LightningElement {
-    @track accounts;
     @track isSurveyFormModalVisible = false;
     @track surveyFields;
     @track isFormDataIncomplete = true;
     @track thankyouVisible = false;
-    @track numberofsubmissions = 17;
     formdata = {};
     insertResult;
-
-    connectedCallback() {}
 
     openSurvey() {
         fetch('/data/survey')
