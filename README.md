@@ -1,8 +1,8 @@
 ![WirSindOhana](/src/client/resources/wirsindohana.png?raw=true "WirSindOhana")
 
-# wirsindohana - survey
+# WirSindOhana - Survey
 
-All source code for our [WirSindOhana Survey](https://wirsindohana.herokuapp.com)
+All source code for our [WirSindOhana Survey](https://wirsindohana.herokuapp.com) App on Heroku. An app where Trailblazers can suggest topics/learning goals for their community meetings. 
 
 ## How to start?
 
