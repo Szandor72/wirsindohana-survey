@@ -14,14 +14,25 @@
 }
 
 .tagline {
-    font-size: 2.5vw;
+    font-size: 5.5vw;
     font-family: 'Courier New', Courier, monospace;
 }
 
 img {
-    max-width: 50vw;
+    max-width: 80vw;
     padding-bottom: 6px;
 }
+
+@media(min-width:480px) {
+    .tagline {
+        font-size: 2.5vw;
+    }
+    img {
+        max-width: 50vw;
+    }
+}
+
+
 
 .greeting {
     height: 60px;
