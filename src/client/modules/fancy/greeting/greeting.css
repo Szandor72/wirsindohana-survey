@@ -3,6 +3,12 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+@media(max-width:450px) {
+    .greet {
+        font-size: 7vw;
+    }
+}
+
 .fade-fast {
     opacity: 0;
     animation: fade-in 1s;
