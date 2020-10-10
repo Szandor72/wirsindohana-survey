@@ -37,32 +37,11 @@
         </div>
     </div>
 
-    <!-- <div
-        class="slds-p-around_large"
-        style="display: flex; flex-wrap: wrap; justify-content: center"
-    >
-        <template for:each={accounts} for:item="account">
-            <template if:true={account.Description}>
-                <ui-card
-                    class="slds-p-around_small"
-                    key={account.Id}
-                    title={account.Name}
-                >
-                    {account.Description}
-                    <span slot="footer">This account is {account.Rating}</span>
-                </ui-card>
-            </template>
-        </template>
-    </div> -->
     <template if:true={isSurveyFormModalVisible}>
         <ui-modal
             oncancelmodal={hideSurvey}
             title="This way to learning. But where to next?"
         >
-            <!-- <p slot="tagline" class="slds-m-top_x-small">
-                Please take a few moments to consider and tell us what you would
-                like to learn next and how.
-            </p> -->
             <ui-form
                 fields={surveyFields}
                 onformdatachange={handleformdata}

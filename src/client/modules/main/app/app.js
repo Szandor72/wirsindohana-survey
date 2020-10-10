@@ -33,14 +33,10 @@ export default class App extends LightningElement {
             headers: {
                 'Content-Type': 'application/json'
             }
-        })
-            .then(response => {
-                return response.json();
-            })
-            .then(data => {
-                this.thankyouVisible = true;
-                this.insertResult = data;
-            });
+        }).then(response => {
+            this.thankyouVisible = true;
+            this.insertResult = response;
+        });
     }
 
     handleformdata(event) {
